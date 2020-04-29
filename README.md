@@ -11,7 +11,7 @@
 ### 2. Other books or courses:
 
 1. ["Story"](https://www.amazon.com/Story-Structure-Substance-Principles-Screenwriting-ebook/dp/B0042FZVOY). --Robert Mckee
-2. ["Computer Systems, A Programmer's Perspective"](./Computer_System_A_Programmer's Perspective_EN.pdf) CMU
+2. ["Computer Systems, A Programmer's Perspective"](http://csapp.cs.cmu.edu/) --Randal E. Bryant and David R. O'Hallaron, Carnegie Mellon University
 
 
 <div align=center>
