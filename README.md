@@ -81,7 +81,7 @@ Handling run-time error: division by zero
 3. ["Computer Systems, A Programmer's Perspective"](http://csapp.cs.cmu.edu/) --Randal E. Bryant and David R. O'Hallaron, Carnegie Mellon University
 
 
-<div align=center>
+<div>
   <a href='https://www.counter12.com'><img src='https://www.counter12.com/img-b0zD7x0BDdD7315B-2.gif' border='0' alt='counter'>
   </a>
   <script type='text/javascript' src='https://www.counter12.com/ad.js?id=b0zD7x0BDdD7315B'>
