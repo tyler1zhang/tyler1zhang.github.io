@@ -9,10 +9,68 @@
 >注释并非越多越好，注释一定是“光看源代码难以知晓的重要信息”，我个人的风格是程序尽量写得不需要注释，然后再写少量必须注释的内容。比如写了一个经典算法的实现，参考的算法说明可以作为一个链接附上，方便不了解这个算法原理的人参考；再比如某处代码用到了一个临时假定，是未来有可能变化的，也很适合记录下来，并且标记一个 TODO 之类的标签，这样以后你只要全文检索 TODO 就能找出所有这类假定，检查是不是情况已经变化或者有了更好的解决方案，而做出相应修改。
 
 
-### 2. 
+### 2. 循环
+
+> 1. python中的循环语句主要有两种： *for* 和 *while*.
+> 2. break 和 continue 可以改变循环体的执行流程。 
+
+### 3. 异常处理
+
+Python 提供的异常处理机制可以用下面的模板来说明：
+
+```python
+try:
+    # 把有可能出现异常的代码放在 try 后面
+    # 当出现异常时解释器会捕获异常
+    # 并根据异常的类型执行后面的对应代码块
+    do_something_nasty()
+except ValueError:
+    # 如果发生 ValueError 类型的异常则执行这个代码块
+    pass
+except (TypeError, ZeroDivisionError):
+    # 可以一次指定几个不同类型的异常在一起处理exceptions
+    # 如果出现 TypeError 或者 ZeroDivisionError 则执行这个代码块
+    pass
+except:
+    # 所有上面没有专门处理的类型的异常会在这里处理
+    pass
+else:
+    # 当且仅当 try 代码块里无异常发生时这个代码块会被执行
+    pass
+finally:
+    # 无论发生了什么这个代码块都会被执行
+    # 通常这里是清理性的代码，比如我们在 try 里面打开一个文件进行处理
+    # 无论过程中有没有异常出现最后都应该关闭文件释放资源
+    # 这样的操作就适合在这里执行
+```
+
+上面出现的关键字 `pass` 的意思是“什么也不做”，Python 语法需要有点什么，但是我们暂时什么都不想做的时候放上一个 `pass` 就可以了。
+
+在这里异常处理确保用户输入可以转换为整数且赋值给 x，否则就不会继续执行下去，经过这样的处理，在这段代码之后我们可以相当有把握的说：x 里面有个合法的、用户输入的整数值；同时用户不管怎么乱输入也不会对程序构成致命影响，我们预期到可能出现的问题，并做了合理处理。这就是异常处理的意义所在。
+
+```python
+def this_fails():
+    x = 1/0
+
+try:
+    this_fails()
+except ZeroDivisionError as err:
+    print('Handling run-time error:', err)
+```
+
+Handling run-time error: division by zero
+
+这个例子展示了用 except ZeroDivisionError as err 这样的语法来取得一个 err 对象，这个对象是系统定义的 Exception 类型或者子类，里面存放着发生异常时的具体上下文信息，可以打印出来也可以做别的处理。
+
+我们还可以从 Exception 派生出我们自己的异常类型，并使用 raise 关键字来在出现某种情况时抛出我们定义的异常，并在文档中做出清晰的说明。这样使用我们代码的其他程序员就知道什么情况是我们程序处理不了的，会抛出什么样的异常，并在调用端用捕获异常进行处理。
+
+建议学习 [关于 Python 异常处理的官方教程](https://docs.python.org/3/tutorial/errors.html) 来了解更多。
 
 
-### 3. Other books or courses:
+
+
+
+### 4. Other books or courses:
 
 1.  [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)
 
