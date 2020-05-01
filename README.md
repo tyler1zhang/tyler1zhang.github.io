@@ -46,6 +46,30 @@ finally:
 
 上面出现的关键字 `pass` 的意思是“什么也不做”，Python 语法需要有点什么，但是我们暂时什么都不想做的时候放上一个 `pass` 就可以了。
 
+在这里异常处理确保用户输入可以转换为整数且赋值给 x，否则就不会继续执行下去，经过这样的处理，在这段代码之后我们可以相当有把握的说：x 里面有个合法的、用户输入的整数值；同时用户不管怎么乱输入也不会对程序构成致命影响，我们预期到可能出现的问题，并做了合理处理。这就是异常处理的意义所在。
+
+```python
+def this_fails():
+    x = 1/0
+
+try:
+    this_fails()
+except ZeroDivisionError as err:
+    print('Handling run-time error:', err)
+```
+
+Handling run-time error: division by zero
+
+这个例子展示了用 except ZeroDivisionError as err 这样的语法来取得一个 err 对象，这个对象是系统定义的 Exception 类型或者子类，里面存放着发生异常时的具体上下文信息，可以打印出来也可以做别的处理。
+
+我们还可以从 Exception 派生出我们自己的异常类型，并使用 raise 关键字来在出现某种情况时抛出我们定义的异常，并在文档中做出清晰的说明。这样使用我们代码的其他程序员就知道什么情况是我们程序处理不了的，会抛出什么样的异常，并在调用端用捕获异常进行处理。
+
+建议学习 [关于 Python 异常处理的官方教程](https://docs.python.org/3/tutorial/errors.html) 来了解更多。
+
+
+
+
+
 ### 4. Other books or courses:
 
 1.  [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html)
