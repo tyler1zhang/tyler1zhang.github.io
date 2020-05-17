@@ -80,6 +80,8 @@ Handling run-time error: division by zero
 
 3. ["Computer Systems, A Programmer's Perspective"](http://csapp.cs.cmu.edu/) --Randal E. Bryant and David R. O'Hallaron, Carnegie Mellon University
 
+4. 学习命令行的[推荐教材](http://cglab.ca/~morin/teaching/1405/clcc/book/cli-crash-courseli3.html#x4-40000.1).
+
 
 <div>
   <a href='https://www.counter12.com'><img src='https://www.counter12.com/img-b0zD7x0BDdD7315B-2.gif' border='0' alt='counter'>
