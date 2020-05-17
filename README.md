@@ -82,6 +82,8 @@ Handling run-time error: division by zero
 
 4. 学习命令行的[推荐教材](http://cglab.ca/~morin/teaching/1405/clcc/book/cli-crash-courseli3.html#x4-40000.1).
 
+5. [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/). 
+
 
 <div>
   <a href='https://www.counter12.com'><img src='https://www.counter12.com/img-b0zD7x0BDdD7315B-2.gif' border='0' alt='counter'>
