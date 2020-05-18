@@ -84,6 +84,8 @@ Handling run-time error: division by zero
 
 5. [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/). 
 
+6. String 的各种内置的[方法](https://docs.python.org/3/library/stdtypes.html#string-methods). 比如str.ljust(), str.join(), str.count(), str.find(), str.lower(), str.upper(), str.isalnum(), str.isdigit(), etc. 
+
 
 <div>
   <a href='https://www.counter12.com'><img src='https://www.counter12.com/img-b0zD7x0BDdD7315B-2.gif' border='0' alt='counter'>
