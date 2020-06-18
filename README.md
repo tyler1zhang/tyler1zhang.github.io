@@ -87,6 +87,8 @@ Handling run-time error: division by zero
 ```python
 str.ljust(), str.join(), str.count(), str.find(), str.lower(), str.upper(), str.isalnum(), str.isdigit(), etc. 
 ```
+7. 定义某个概念可能用到的 [巴克斯范式（BNF）](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form)标注。
+
 
 <div>
   <a href='https://www.counter12.com'><img src='https://www.counter12.com/img-b0zD7x0BDdD7315B-2.gif' border='0' alt='counter'>
