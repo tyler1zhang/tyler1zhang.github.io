@@ -77,7 +77,7 @@ Handling run-time error: division by zero
 
 2. ["Story"](https://www.amazon.com/Story-Structure-Substance-Principles-Screenwriting-ebook/dp/B0042FZVOY). --Robert Mckee
 
-3. ["Computer Systems, A Programmer's Perspective"](http://csapp.cs.cmu.edu/) --Randal E. Bryant and David R. O'Hallaron, Carnegie Mellon University
+3. 学习计算机系统，顺便学会C语言["Computer Systems, A Programmer's Perspective"](http://csapp.cs.cmu.edu/) --Randal E. Bryant and David R. O'Hallaron, Carnegie Mellon University
 
 4. 学习命令行的[推荐教材](http://cglab.ca/~morin/teaching/1405/clcc/book/cli-crash-courseli3.html#x4-40000.1).
 
