@@ -89,7 +89,7 @@ str.ljust(), str.join(), str.count(), str.find(), str.lower(), str.upper(), str.
 ```
 7. 定义某个概念可能用到的 [巴克斯范式（BNF）](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form)标注。
 
-8. python对时间字符串的[格式整理](strftime.org)
+8. python对时间字符串的[格式整理](https://strftime.org/)。 使用的方法是 ```t.strftime('%Y-%m-%d %a')```
 
 
 <div>
