@@ -81,6 +81,10 @@ Handling run-time error: division by zero
 
 4. 学习命令行的[推荐教材](http://cglab.ca/~morin/teaching/1405/clcc/book/cli-crash-courseli3.html#x4-40000.1).
 
+4. 学习bad smell和程序设计。 [《重构》](https://books.google.com.sg/books/about/Refactoring.html?id=HmrDHwgkbPsC&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false)
+
+4. 老师推荐的书， SICP
+
 5. [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/). 
 
 6. String 的各种内置的[方法](https://docs.python.org/3/library/stdtypes.html#string-methods). 比如
